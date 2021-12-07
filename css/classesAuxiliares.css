@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Open+Sans&family=Roboto:wght@300&family=Source+Sans+Pro:wght@300&display=swap');
+
+/****FONTES****
+*Open Sans
+*Corinthia
+*Source Sans Pro
+*Roboto
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+
+.container{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.flex{
+    display: flex;
+}
+
+.w50{
+    width: 50%;
+}

@@ -1,0 +1,28 @@
+header{
+    width: 100%;
+    background-color: rgb(255, 191, 212);
+    padding: 1.5% 0;
+}
+header a{
+    text-decoration: none;
+}
+header nav ul{
+    text-align: right;
+}
+header nav ul li{
+    display: inline-block;
+    margin-left: 20px;
+    padding: 6px 0;
+}
+
+header .logomarca a{
+    font-size: 38px;
+    font-family: 'Corinthia';
+    color: rgb(85, 0, 25);
+}
+
+header nav a{
+    font-size: 18px;
+    font-family: 'Source Sans Pro';
+    color: rgb(85, 0, 25);
+}
