@@ -7,6 +7,11 @@
 *Roboto
 */
 
+:root{
+    --main-text-color: rgb(85, 0, 25);
+    --main-bg-color: rgb(255, 191, 212);
+}
+
 *{
     padding: 0;
     margin: 0;
