@@ -1,22 +1,23 @@
 :root{
-    --main-text-color: color: rgb(85, 0, 25);
+    --main-text-color: rgb(85, 0, 25);
+    --main-bg-color: rgb(255, 191, 212);
 }
 
 header{
     width: 100%;
     background-color: rgb(255, 191, 212);
-    padding: 1.5% 0;
+    padding: 10px 0;
 }
 header a{
     text-decoration: none;
 }
-header nav ul{
+header nav.menu-desktop ul{
     text-align: right;
 }
-header nav ul li{
+header nav.menu-desktop ul li{
     display: inline-block;
     margin-left: 20px;
-    padding: 6px 0;
+    padding: 8px 0;
 }
 
 header .logomarca a{
@@ -25,8 +26,60 @@ header .logomarca a{
     color: var(--main-text-color);
 }
 
-header nav a{
+header nav.menu-desktop a{
     font-size: 18px;
     font-family: 'Source Sans Pro';
     color: var(--main-text-color);
+}
+
+header nav.menu-desktop a:hover{
+    font-weight: 700;
+}
+
+nav.menu-mobile{
+    display: none;
+    background-image: url('../icons/menu-burguer.png');
+    height: 32px;
+    width: 32px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: 4px 10px;
+    cursor: pointer;
+}
+nav.menu-mobile ul{
+    display: none;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 6px;
+    background-color: var(--main-bg-color);
+}
+nav.menu-mobile ul li{
+    padding: 4px 0;
+    border-bottom: 1px solid var(--main-text-color)
+}
+nav.menu-mobile ul li:hover{
+    background-color: rgb(255, 179, 203);
+    transition: .4s;
+}
+nav.menu-mobile a{
+    font-size: 18px;
+    font-family: 'Source Sans Pro';
+    color: var(--main-text-color);
+}
+nav.menu-mobile a:hover{
+    font-weight: 700;
+}
+@media screen and (max-width:768px){
+    .logomarca{
+        flex: 1;
+    }
+    .menu-desktop{
+        display: none;
+    }
+    nav.menu-mobile{
+        display: block;
+    }
 }
