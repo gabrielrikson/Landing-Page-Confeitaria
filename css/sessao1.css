@@ -1,0 +1,25 @@
+section.sessao1{
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+}
+
+.sessao1-left{
+    background-color: var(--main-bg-color);
+    min-height: 300px;
+    width: 50%;
+}
+
+.sessao1-right{
+    min-height: 300px;
+    width: 50%;
+}
+
+@media screen and (max-width:768px) {
+    section.sessao1{
+        flex-direction: column;
+    }
+    .sessao1-left,.sessao1-right{
+        width: 100%;
+    }
+}
